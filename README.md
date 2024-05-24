@@ -1,6 +1,6 @@
 # ¡Bienvenidos a la guía de Bootstrap 5.0 de Grandote58! 🚀
 
-![http://drive.google.com/uc?export=view&id=1afY2Pl3zTtd8Im1NgF_7P2ig6GFSxJ5H]()
+
 
 ## 📌 Resumen
 
