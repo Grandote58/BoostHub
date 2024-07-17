@@ -1,3 +1,6 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
+
 # **Contenidos WEB - Mas Profesionales**
 
 En esta práctica, crearemos un contenedor que incluye tres tarjetas, cada una con una imagen, un título, una descripción y un botón. El contenedor estará preparado para recibir más tarjetas, asegurando que todas mantengan las mismas propiedades responsivas y se vean bien en pantallas pequeñas. Utilizaremos márgenes para una adecuada distribución y alineación.
@@ -206,3 +209,6 @@ En esta práctica, crearemos un contenedor que incluye tres tarjetas, cada una c
 2. **Instrucciones:**
    - Implementar al menos tres de las mejoras sugeridas anteriormente.
    - Documentar los cambios realizados y explicar cómo cada mejora mejora la usabilidad y la experiencia del usuario.
+
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
