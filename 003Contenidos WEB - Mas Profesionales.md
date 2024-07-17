@@ -1,3 +1,5 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
 # **Contenidos WEB - Mas Profesionales**
 
 En esta práctica, crearemos un header responsivo que incluye una imagen que puede redimensionarse tanto en ancho como en alto, y títulos principales y secundarios junto con un botón. Los textos y el botón podrán colocarse en cualquier parte del header y tendrán un fondo transparente. También se asegurarán de que todo el contenido sea responsivo y se vea bien en pantallas pequeñas.
@@ -147,3 +149,5 @@ En esta práctica, crearemos un header responsivo que incluye una imagen que pue
 2. **Instrucciones:**
    - Implementar al menos tres de las mejoras sugeridas anteriormente.
    - Documentar los cambios realizados y explicar cómo cada mejora mejora la usabilidad y la experiencia del usuario.
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
