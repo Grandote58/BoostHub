@@ -1,3 +1,5 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
 # **Contenidos WEB - Mas Profesionales**
 
 ### Practica 001 : Plantilla de HTML5 con Grid System
@@ -159,3 +161,6 @@ td {
 - Cambia los colores y el contenido de las tablas.
 - Añade más secciones y personaliza el diseño responsivo.
 - Explora propiedades avanzadas de Grid como `grid-area`.
+
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
