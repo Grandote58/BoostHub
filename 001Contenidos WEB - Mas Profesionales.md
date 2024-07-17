@@ -6,7 +6,7 @@
 
 **Objetivo:** Crear una plantilla de HTML5 que incluya `header`, `nav`, `section`, `aside` y `footer`, cada uno con una tabla de una fila y una columna de color diferente, utilizando el **Grid system** para hacerla responsiva.
 
-![image-20240716122120877](C:\Users\juanc\AppData\Roaming\Typora\typora-user-images\image-20240716122120877.png)
+![image-20240716122120877](https://github.com/Grandote58/BoostHub/blob/main/estructuraHTML5.png)
 
 
 
