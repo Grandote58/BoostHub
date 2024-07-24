@@ -1,3 +1,5 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
 # **Contenidos WEB - Mas Profesionales**
 
 ## Diseño y Personalización de Contenedores Responsivos
@@ -196,6 +198,9 @@ Aquí se muestra la solución completa del código HTML y CSS.
 ### Conclusión
 
 Este tutorial proporciona los conocimientos necesarios para crear contenedores personalizados utilizando Bootstrap y CSS, asegurando que el contenido sea responsivo y se vea bien en cualquier dispositivo. Estas técnicas pueden aplicarse en el diseño de sitios web modernos, permitiendo la personalización de secciones clave como encabezados, pies de página y bloques de contenido.
+
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
 
 
 
