@@ -1,3 +1,7 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
+
+
 # Creación de un Jumbotron Personalizado con Bootstrap
 
 ### Objetivos Específicos
@@ -87,6 +91,8 @@ Para asegurarnos de que el jumbotron sea responsivo y se vea correctamente en to
   border-color: #0056b3; /* Color del contorno del botón al pasar el mouse */
 }
 ```
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
 
 ### Conclusión
 
