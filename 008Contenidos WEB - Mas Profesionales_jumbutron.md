@@ -1,3 +1,6 @@
+# ![Mesa de trabajo 1Head](http://drive.google.com/uc?export=view&id=1p2rqX0Nck3MI8LKzYct_oEMRETRIhzTH)
+
+
 # Creación de un Jumbotron Responsivo con Bootstrap 5
 
 En este tutorial, aprenderás a crear un jumbotron responsivo utilizando Bootstrap 5 y HTML5. El jumbotron incluirá un título, un texto secundario, un botón y una imagen. Todos los estilos personalizados se aplicarán desde una hoja de estilo externa para mantener el código limpio y fácil de mantener.
@@ -112,3 +115,6 @@ En este tutorial, aprenderás a crear un jumbotron responsivo utilizando Bootstr
 ### Paso 3: Verificar la Responsividad
 
 1. **Abre `index.html` en tu navegador** y ajusta el tamaño de la ventana para verificar que el jumbotron se visualiza correctamente en diferentes tamaños de pantalla. Asegúrate de que el diseño se adapta adecuadamente y que todos los elementos (título, texto, botón e imagen) están bien alineados y son visibles.
+
+
+# ![Mesa de trabajo 1FOOTER](http://drive.google.com/uc?export=view&id=1vwLVsNlcF2PEyv9fULe2cohQnVfwRWLg)
