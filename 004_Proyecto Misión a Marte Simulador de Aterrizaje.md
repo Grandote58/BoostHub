@@ -52,7 +52,7 @@ proyecto-mision-marte/
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Misión a Marte: Simulador de Aterrizaje</title>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
       <!-- Encabezado -->
@@ -76,15 +76,18 @@ proyecto-mision-marte/
                       <span id="inclinacion-display">0</span>°
                   </div>
                   <button type="button" id="iniciar-simulacion" class="btn btn-primary">Iniciar Simulación</button>
+                  <button type="button" id="reiniciar-simulacion" class="btn btn-secondary">Reiniciar Simulación</button>
               </form>
+              
           </div>
       </div>
   
       <!-- Simulación -->
       <div class="container">
           <div id="simulacion" class="position-relative">
-              <img src="img/marte.png" alt="Marte" class="img-fluid w-100">
-              <img src="img/nave.png" alt="Nave Espacial" id="nave" class="position-absolute">
+             
+              <!-- Imagen de la nave espacial -->
+              <img src="/IMG/nave.jpg" alt="Nave Espacial" id="nave" class="position-absolute nave">
           </div>
       </div>
   
@@ -96,7 +99,7 @@ proyecto-mision-marte/
           </div>
       </div>
   
-      <script src="js/script.js"></script>
+      <script src="/javascript/jsnew.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
@@ -148,24 +151,35 @@ proyecto-mision-marte/
   
   /* Estilo para la Simulación */
   #simulacion {
+      width: 1300px;
       height: 500px;
-      background: url('../img/marte.png') no-repeat center center;
+      background: url('/IMG/marte.png') no-repeat center center;   
       background-size: cover;
       border: 2px solid #fff;
       position: relative;
   }
   
-  #nave {
-      width: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-  }
+  
   
   /* Estilo para el Panel de Resultados */
   #panel-resultados {
       background-color: #fff;
       color: #000;
       border-radius: 10px;
+  }
+  
+  /* Estilos para la simulación */
+  .marte {
+      width: 1200px;
+      height: 500px;
+  }
+  
+  .nave {
+      width: 60px;
+      height: 60px;
+      top: 50%;  /* Centrar verticalmente la nave dentro de Marte */
+      left: 50%; /* Centrar horizontalmente la nave dentro de Marte */
+      transform: translate(-50%, -50%);
   }
   ```
 
@@ -185,44 +199,58 @@ proyecto-mision-marte/
 - Código JavaScript:
 
   ```javascript
-  // Actualizar los valores de los rangos en tiempo real
-  document.getElementById('velocidad').addEventListener('input', function() {
-      document.getElementById('velocidad-display').textContent = this.value;
-  });
-  
-  document.getElementById('inclinacion').addEventListener('input', function() {
-      document.getElementById('inclinacion-display').textContent = this.value;
-  });
+  // Función para actualizar la visualización de los valores
+  function actualizarValores() {
+      const velocidad = document.getElementById('velocidad').value;
+      const inclinacion = document.getElementById('inclinacion').value;
+      document.getElementById('velocidad-display').textContent = velocidad;
+      document.getElementById('inclinacion-display').textContent = inclinacion;
+  }
   
   // Función para iniciar la simulación
-  document.getElementById('iniciar-simulacion').addEventListener('click', function() {
+  function iniciarSimulacion() {
       const velocidad = document.getElementById('velocidad').value;
       const inclinacion = document.getElementById('inclinacion').value;
       const resultado = document.getElementById('resultado');
-      let exito;
+      const nave = document.getElementById('nave');
   
       // Lógica simple para determinar el éxito del aterrizaje
-      if (velocidad <= 50 && inclinacion >= -10 && inclinacion <= 10) {
-          exito = true;
-          resultado.textContent = "¡Éxito! La nave ha aterrizado correctamente en Marte.";
-          resultado.style.color = "green";
-      } else {
-          exito = false;
-          resultado.textContent = "Fallido. La nave se estrelló en Marte.";
-          resultado.style.color = "red";
-      }
+      const exito = velocidad <= 50 && inclinacion >= -10 && inclinacion <= 10;
+      resultado.textContent = exito 
+          ? "¡Éxito! La nave ha aterrizado correctamente en Marte." 
+          : "Fallido. La nave se estrelló en Marte.";
+      resultado.style.color = exito ? "green" : "red";
   
       // Mostrar la nave descendiendo
-      const nave = document.getElementById('nave');
       nave.style.top = exito ? "80%" : "95%";
       nave.style.transition = "top 2s ease-in-out";
-  });
-  ```
-
+  }
   
-
+  // Función para reiniciar la simulación
+  function reiniciarSimulacion() {
+      document.getElementById('velocidad').value = 50;
+      document.getElementById('inclinacion').value = 0;
+      actualizarValores();
+      
+          // Restablecer la posición de la nave a su posición inicial
+          const nave = document.getElementById('nave');
+          nave.style.top = "20%";  // Asume que "0%" es la posición inicial de la nave
+          nave.style.transition = "none";  // Elimina cualquier transición para el reinicio instantáneo
+          
+          console.log('Simulación reiniciada');
+  }
+  
+  // Añadir eventos
+  document.getElementById('velocidad').addEventListener('input', actualizarValores);
+  document.getElementById('inclinacion').addEventListener('input', actualizarValores);
+  document.getElementById('iniciar-simulacion').addEventListener('click', iniciarSimulacion);
+  document.getElementById('reiniciar-simulacion').addEventListener('click', reiniciarSimulacion);
+  ```
+  
+  
+  
   ## Mejores Prácticas de JavaScript:
-
+  
   - Documenta cada función explicando claramente su propósito y cómo interactúa con los elementos HTML y CSS.
   - Usa `addEventListener` para manejar los eventos de forma modular y escalable.
   - Utiliza transiciones CSS junto con JavaScript para crear efectos visuales suaves.
