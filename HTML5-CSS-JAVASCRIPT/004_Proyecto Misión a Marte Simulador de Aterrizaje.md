@@ -1,6 +1,8 @@
 # Recordar Concepto !.
 
-**`document.getElementById`** es un método en JavaScript que se utiliza para seleccionar y manipular un elemento específico dentro de un documento HTML basado en su atributo `id`. Es una de las formas más comunes de acceder a elementos del DOM (Document Object Model) para poder modificarlos o interactuar con ellos.
+## **`document.getElementById`**
+
+Es un método en JavaScript que se utiliza para seleccionar y manipular un elemento específico dentro de un documento HTML basado en su atributo `id`. Es una de las formas más comunes de acceder a elementos del DOM (Document Object Model) para poder modificarlos o interactuar con ellos.
 
 ## ¿Cómo funciona?
 
@@ -47,7 +49,183 @@ function cambiarTexto() {
 - **Único para el documento**: Un `id` debe ser único en el documento HTML. Si hay múltiples elementos con el mismo `id`, `getElementById` solo devolverá el primero que encuentre.
 - **Solo por `id`**: Este método solo selecciona elementos por su atributo `id`, no funciona con clases u otros selectores.
 
-En resumen, `document.getElementById` es una herramienta fundamental en JavaScript para acceder de forma directa a los elementos de una página y realizar modificaciones o interacciones dinámicas con ellos.
+
+
+### Ejemplo 1: Cambiar el texto de un párrafo
+
+Cuando haces clic en el botón, el texto del párrafo cambia.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="miParrafo">Este es el texto original.</p>
+<button onclick="cambiarTexto()">Cambiar texto</button>
+
+<script>
+function cambiarTexto() {
+    document.getElementById("miParrafo").innerHTML = "¡El texto ha cambiado!";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+### Ejemplo 2: Cambiar el color de un título
+
+Al hacer clic en el botón, el color del título cambia a rojo.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="miTitulo">¡Hola!</h1>
+<button onclick="cambiarColor()">Cambiar color</button>
+
+<script>
+function cambiarColor() {
+    document.getElementById("miTitulo").style.color = "red";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+### Ejemplo 3: Ocultar una imagen
+
+Al hacer clic en el botón, la imagen desaparece.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="miImagen" src="imagen.jpg" width="300">
+<button onclick="ocultarImagen()">Ocultar imagen</button>
+
+<script>
+function ocultarImagen() {
+    document.getElementById("miImagen").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+## `element.style.display`:
+
+Imagina que en una página web puedes tener elementos como textos, imágenes o botones, y a veces quieres que estos elementos se vean, y otras veces no. Con **`element.style.display`** le decimos a la computadora si debe mostrar u ocultar un elemento en la página.
+
+Es como si tuvieras un interruptor que puede encender o apagar un objeto en la página. Cuando el "interruptor" está en "none", el objeto se oculta, y cuando está en "block", el objeto aparece.
+
+**¿Cómo funciona?**
+
+1. Seleccionas un elemento usando su **ID**.
+
+2. Usas 
+
+   `element.style.display`
+
+    para decir si quieres que ese elemento se vea o no.
+
+   - Si pones `display = "none"`, el elemento desaparece.
+   - Si pones `display = "block"`, el elemento aparece.
+
+### Ejemplo 1: Mostrar y ocultar un párrafo
+
+Con el primer botón ocultas el párrafo, y con el segundo lo vuelves a mostrar.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="miParrafo">Este es un párrafo que puedes ocultar.</p>
+<button onclick="ocultar()">Ocultar</button>
+<button onclick="mostrar()">Mostrar</button>
+
+<script>
+function ocultar() {
+    document.getElementById("miParrafo").style.display = "none";
+}
+
+function mostrar() {
+    document.getElementById("miParrafo").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+### Ejemplo 2: Mostrar y ocultar una imagen
+
+Aquí puedes hacer que la imagen desaparezca y luego vuelva a aparecer usando los botones.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="miImagen" src="imagen.jpg" width="300">
+<button onclick="esconderImagen()">Ocultar Imagen</button>
+<button onclick="mostrarImagen()">Mostrar Imagen</button>
+
+<script>
+function esconderImagen() {
+    document.getElementById("miImagen").style.display = "none";
+}
+
+function mostrarImagen() {
+    document.getElementById("miImagen").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+### Ejemplo 3: Cambiar entre mostrar y ocultar una caja de texto
+
+Este ejemplo te permite hacer que una caja azul se oculte o se muestre cada vez que haces clic en el botón.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="miCaja" style="width:100px; height:100px; background-color:lightblue;"></div>
+<button onclick="cambiarVisibilidad()">Cambiar Visibilidad</button>
+
+<script>
+function cambiarVisibilidad() {
+    var caja = document.getElementById("miCaja");
+    if (caja.style.display === "none") {
+        caja.style.display = "block";
+    } else {
+        caja.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+```
 
 # Proyecto: Misión a Marte: Simulador de Aterrizaje
 
